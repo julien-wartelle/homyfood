@@ -1,0 +1,23 @@
+{
+  "name": "homyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass -watch saas -css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julien-wartelle/homyfood.git"
+  },
+  "author": "JW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julien-wartelle/homyfood/issues"
+  },
+  "homepage": "https://github.com/julien-wartelle/homyfood#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

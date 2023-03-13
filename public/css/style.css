@@ -446,8 +446,8 @@ html {
   position: absolute;
   top: none;
   left: none;
-  height: 200%;
-  width: 200%;
+  height: 130%;
+  width: 130;
   display: flex;
   align-items: center;
   justify-content: center;

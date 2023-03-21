@@ -308,19 +308,24 @@ html {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
 }
-
 .cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction:column;
+
 }
+
 @media (min-width: 64rem) {
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction:row;
+    
   }
-}
 
+ 
+}
 .card {
   background-color: white;
   position: relative;
@@ -374,7 +379,7 @@ html {
 .card__like {
   background-color: white ;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .menu__like {
     outline: none;
   }
@@ -405,7 +410,7 @@ html {
   font-family: "Shrikhand", "cursive";
 }
 .menu__btn {
-  
+  outline: none;
   height: 2rem;
   width: 2rem;
 
@@ -442,12 +447,12 @@ html {
 .menu__like {
   
   transition-duration: 0.25s;
-  background-color: white;
+  background-color: #f6f6f6;
   position: absolute;
   top: none;
   left: none;
   height: 130%;
-  width: 130;
+  width: 130%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -458,23 +463,23 @@ html {
   opacity: 0;
   
 }
-
 .submenus {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
   }
   
   .submenu {
   flex-basis: calc(33.33% - 1rem);
   margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem ;
   }
-  
-  
+ 
 .submenu__title {
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   font-weight: normal;
 }
 .submenu__title::after {
@@ -485,6 +490,7 @@ html {
   position: absolute;
   left: 0;
   bottom: 0;
+  
 }
 
 .menuItem {
@@ -494,19 +500,20 @@ html {
   border-radius: 0.75rem;
   margin: 1rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  overflow: hidden; 
   cursor: pointer;
-  animation: itemAppear 1500ms 200ms ease-in-out backwards;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: itemAppear 1500ms 200ms ease-in-out backwards ;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82) ;
   animation-fill-mode: both;
   transform: scale(0);
-  max-width: 100%;
+  
 }
 .menuItem__header {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
+  z-index: 2;
 }
 .menuItem__title {
   margin: 0;
@@ -517,15 +524,17 @@ html {
 .menuItem__description {
   margin: 0;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
+
+
 .menuItem__price {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 0.5rem;
+  padding-left: 0.25rem;
 }
 .menuItem__confirmation {
   background-color: #99E2D0;
@@ -556,7 +565,6 @@ html {
 .menuItem__icon {
   color: #99E2D0;
 }
-
 .delay-0 {
   animation-delay: 0s;
 }
@@ -619,5 +627,3 @@ html {
   text-decoration: none;
   color: white;
 }
-
-

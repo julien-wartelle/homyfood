@@ -472,8 +472,6 @@ html {
   .submenu {
   flex-basis: calc(33.33% - 1rem);
   margin-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem ;
   }
  
 .submenu__title {

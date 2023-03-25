@@ -309,22 +309,15 @@ html {
   padding: 2rem 1rem;
 }
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  flex-direction:column;
-
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
-
 @media (min-width: 64rem) {
   .cards {
-    display: flex;
-    flex-direction:row;
-    
+    grid-template-columns: repeat(2, 1fr);
   }
-
- 
 }
 .card {
   background-color: white;
@@ -625,3 +618,4 @@ html {
   text-decoration: none;
   color: white;
 }
+

@@ -460,10 +460,10 @@ html {
   .submenu {
   flex-basis: calc(33.33% - 1rem);
   margin-bottom: 1rem;
+  margin-left: 1rem;
   }
  
 .submenu__title {
-  margin-left: 1rem;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0.25rem;

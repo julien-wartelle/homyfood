@@ -363,7 +363,6 @@ html {
   height: 2rem;
   width: 2rem;
   background-color: transparent;
-  
   padding: 0;
   display: flex;
   align-items: center;
@@ -385,15 +384,12 @@ html {
 }
 
 .menu {
-  
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
-  
   position: relative;
 }
 .menu__header {
-  
   padding: 1rem 2rem 0 1rem;
   display: flex;
   align-items: center;
@@ -406,7 +402,6 @@ html {
   outline: none;
   height: 2rem;
   width: 2rem;
-
   border: none;
   padding: 0;
   display: flex;
@@ -468,6 +463,7 @@ html {
   }
  
 .submenu__title {
+  margin-left:2px;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0.25rem;
